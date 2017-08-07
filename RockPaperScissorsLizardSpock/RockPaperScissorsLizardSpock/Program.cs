@@ -10,6 +10,21 @@ namespace RockPaperScissorsLizardSpock
     {
         static void Main(string[] args)
         {
+            {
+                bool playerVersusPlayer;
+                Console.WriteLine("Type 1 for Player vs Player or 2 for Player vs CPU:   ");
+                string answer = Console.ReadLine();
+
+                if (answer.Equals("1"))
+                {
+                    playerVersusPlayer = true;
+                }
+                else
+                {
+                    playerVersusPlayer = false;
+                } 
+              
+            }
 
             string inputPlayer, inputCPU;
             int randomInt;
