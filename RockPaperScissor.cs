@@ -63,6 +63,9 @@ namespace blahblah
                                 Console.WriteLine("PLAYER WINS!! SPOCK VAPORIZES ROCK!\n\n");
                             }
                             break;
+                        default:
+                            Console.WriteLine("Invalid entry!");
+                            break;
                         case 2:
                             inputCPU = "PAPER";
                             Console.WriteLine("Computer chose PAPER");
@@ -72,14 +75,27 @@ namespace blahblah
                             }
                             else if (inputPlayer == "ROCK")
                             {
-                                Console.WriteLine("CPU WINS!!\n\n");
+                                Console.WriteLine("CPU WINS!! PAPER COVERS ROCK!\n\n");
                                 scoreCPU++;
                             }
                             else if (inputPlayer == "SCISSORS")
                             {
-                                Console.WriteLine("PLAYER WINS!!\n\n");
+                                Console.WriteLine("PLAYER WINS!! SCISSORS CUTS PAPER!\n\n");
                                 scorePlayer++;
                             }
+                            else if (inputPlayer == "LIZARD")
+                            {
+                                Console.WriteLine("PLAYER WINS!! LIZARD EATS PAPER!\n\n");
+                                scorePlayer++;
+                            }
+                            else if (inputPlayer == "SPOCK")
+                            {
+                                Console.WriteLine("CPU WINS!! PAPER DISPROVES SPOCK!\n\n");
+                                scoreCPU++;
+                            }
+                            break;
+                        default:
+                            Console.WriteLine("Invalid entry!");
                             break;
                         case 3:
                             inputCPU = "SCISSORS";
@@ -90,49 +106,85 @@ namespace blahblah
                             }
                             else if (inputPlayer == "ROCK")
                             {
-                                Console.WriteLine("PLAYER WINS!!\n\n");
+                                Console.WriteLine("PLAYER WINS!! ROCK CRUSHES SCISSORS!\n\n");
                                 scorePlayer++;
                             }
                             else if (inputPlayer == "PAPER")
                             {
-                                Console.WriteLine("CPU WINS!!\n\n");
+                                Console.WriteLine("CPU WINS!! SCISSORS CUTS PAPER!\n\n");
+                                scoreCPU++;
+                            }
+                            else if (inputPlayer == "SPOCK")
+                            {
+                                Console.WriteLine("PLAYER WINS!! SPOCK SMASHES SCISSORS!\n\n");
+                                scorePlayer++;
+                            }
+                            else if (inputPlayer == "LIZARD")
+                            {
+                                Console.WriteLine("CPU WINS!! SCISSORS DECAPITATES LIZARD!\n\n");
                                 scoreCPU++;
                             }
                             break;
+                        default:
+                            Console.WriteLine("Invalid entry!");
+                            break;
                         case 4:
                             inputCPU = "LIZARD";
-                            Console.WriteLine("Computer chose SCISSORS");
+                            Console.WriteLine("Computer chose LIZARD");
                             if (inputPlayer == "LIZARD")
                             {
                                 Console.WriteLine("DRAW!!\n\n");
                             }
                             else if (inputPlayer == "ROCK")
                             {
-                                Console.WriteLine("PLAYER WINS!!\n\n");
+                                Console.WriteLine("PLAYER WINS!! ROCK CRUSHES LIZARD!\n\n");
                                 scorePlayer++;
                             }
                             else if (inputPlayer == "PAPER")
                             {
-                                Console.WriteLine("CPU WINS!!\n\n");
+                                Console.WriteLine("CPU WINS!! LIZARD EATS PAPER!\n\n");
+                                scoreCPU++;
+                            }
+                            else if (inputPlayer == "SCISSORS")
+                            {
+                                Console.WriteLine("PLAYER WINS!! SCISSORS DECAPITATES LIZARD!\n\n");
+                                scorePlayer++;
+                            }
+                            else if (inputPlayer == "SPOCK")
+                            {
+                                Console.WriteLine("CPU WINS!! LIZARD POISONS SPOCK!\n\n");
                                 scoreCPU++;
                             }
                             break;
+                        default:
+                            Console.WriteLine("Invalid entry!");
+                            break;
                         case 5:
                             inputCPU = "SPOCK";
-                            Console.WriteLine("Computer chose SCISSORS");
-                            if (inputPlayer == "SCISSORS")
+                            Console.WriteLine("Computer chose SPOCK");
+                            if (inputPlayer == "SPOCK")
                             {
                                 Console.WriteLine("DRAW!!\n\n");
                             }
                             else if (inputPlayer == "ROCK")
                             {
-                                Console.WriteLine("PLAYER WINS!!\n\n");
-                                scorePlayer++;
+                                Console.WriteLine("CPU WINS!! SPOCK VAPORIZES ROCK\n\n");
+                                scoreCPU++;
                             }
                             else if (inputPlayer == "PAPER")
                             {
-                                Console.WriteLine("CPU WINS!!\n\n");
+                                Console.WriteLine("PLAYER WINS!! PAPER DISPROVES SPOCK!\n\n");
+                                scorePlayer++;
+                            }
+                            else if (inputPlayer == "SCISSORS")
+                            {
+                                Console.WriteLine("CPU WINS!! SPOCK SMASHES SCISSORS!\n\n");
                                 scoreCPU++;
+                            }
+                            else if (inputPlayer == "LIZARD")
+                            {
+                                Console.WriteLine("PLAYER WINS!! LIZARD POISONS SPOCK!\n\n");
+                                scorePlayer++;
                             }
                             break;
 
